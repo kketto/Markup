@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+}
+
+nav{
+    
+    background-color: white;
+    height:calc(100vh - 120px);
+    width: 120px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+#burger {
+
+    width: 32px;
+    border: none;
+    background-color: white;
+    padding: 0;
+
+}
+
+#email {
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 44px;
+    font-size: 12px;
+}
+
+#page1 {
+
+    width:100%;
+    height: 100vh;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#main {
+
+    margin-right: 140px;
+    margin-left: 250px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#start {
+
+    background-color: white;
+    border: none;
+    width: 160px;
+    height: 50px;
+    min-height: 50px;
+
+}
+
+
+
+h1 {
+font-size: 100px;
+    color:#E3C4A8;
+    margin-right: 300px;
+font-family: Helvetica Neue;
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+    margin-right: 600px;
+
+}
+
+#circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    background: #4592AF;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0; 
+    z-index: -1;
+  }
+
+  #content{
+      margin: 250px;
+      margin-bottom: 0;
+      padding: 60px;
+  }
+
+  h2 {
+
+    font-size: 72px;
+    color: white;
+
+  }
+
+  #service-items {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #left-service {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #right-service {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card{
+      width: 500px;
+      color: #E3C4A8;
+      font-size: 48px;
+      height: 250px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+
+  .service-card>div{
+    width: 279px;
+  }
+
+  .service-card>img{
+
+        position: absolute;
+        width: 250px;
+        right: 0;
+        transform: rotate(-7deg);
+        z-index: -1;
+        filter: brightness(0.5);
+        transition: filter,transform  0.3s;
+
+  }
+
+  .service-card:hover>img {
+    transform: rotate(0);
+    filter: brightness(1);   
+  }
+
+  #projects{
+      
+    margin-top: 250px;
+  }
+
+  .project-card {
+
+    width: 405px;
+    margin-bottom: 160px;
+
+  }
+
+  .project-img {
+
+    width: 100%;
+  }
+
+  .type {
+
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    margin:0; 
+
+  }
+
+  .name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+  }
+
+  #project-items {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #right-project {
+
+    margin-top: 90px;
+  }
+  #plus{
+      display: flex;
+      justify-content: center;
+  }
+  #plus>button{
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+        
+  }
+
+  #footer {
+    height: 100vh;
+    background-color: white;
+    padding: 310px;
+    padding-top: 250px;
+    
+  }
+
+  #footer-items{
+      display: flex;
+      justify-content: space-between;
+     
+
+  }
+
+  #left-footer{
+      width: 481px;
+  }
+
+  
+  #right-footer{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  #footer h2{
+      margin-top: 0;
+    }
+    
+  #footer h3{
+    margin: 0;
+  }
+
+
+  #footer *{
+    color: black ;
+
+  }
+
+  #ending {
+position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    
+  }
+
+  #ending-socials {
+
+    position: absolute;
+    left: 0;
+    top: 70px;
+
+  }
+
+  label {
+
+    opacity: 0.4;
+    font-size: 24px;
+    
+
+  }
+
+  input {
+    height: 40px;
+    border: none;
+
+  }
+  textarea {
+    resize: none;
+    border: none;
+
+  }
+  #right-footer>button{
+    padding-left: 0;
+    width: 115px;
+    color: black;
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  input:focus,textarea:focus {
+
+    border-bottom: black solid 2px;
+
+  }
+
+  input:focus + label,textarea:focus + label{
+      /* background-color: red; */
+      opacity: 1;
+  }
